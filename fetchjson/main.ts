@@ -27,6 +27,6 @@ let result = axios({
     })
     .catch((error: any) => console.log(error));
     
-function logTodo(userId: number, id: number, title: string, completed: boolean): void {
+const logTodo = (userId: number, id: number, title: string, completed: boolean): void => {
     console.table({userId, id, title, completed});
 }
